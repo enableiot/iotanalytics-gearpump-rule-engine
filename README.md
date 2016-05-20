@@ -49,7 +49,7 @@ cf login
     If you have deployed backend already, then you should kerberos credentials set previously.
     This is only reminder that same service need to be attached to IoT Analytics Gearpump Rule Engine also.
 
-        cf cups kerberos-service -p '{"kdc":"${KERBEROS_KDC}","kpassword":"${KERBEROS_USER_PASSWORD}","krealm":"${KERBEROS_REALM}","kuser":"${KERBEROS_USER_NAME}"}'
+        cf cs kerberos shared kerberos-service
 
     If you have deployed backend already, then you should kafka topic properties set previously.
     This is only reminder that same service need to be attached to IoT Analytics Gearpump Rule Engine also.

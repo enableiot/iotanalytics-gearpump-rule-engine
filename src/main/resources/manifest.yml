@@ -1,0 +1,22 @@
+---
+applications:
+- name: gearpump-deployer
+  command: python src/app.py
+  instances: 1
+  memory: 512M
+  disk_quota: 512M
+  path: deployer
+  buildpack: https://github.com/cloudfoundry/buildpack-python.git
+  no-route: true
+  services:
+    - mykafka
+    - myhbase
+    - myzookeeper
+    - dashboard-endpoint-ups
+    - rule-engine-credentials-ups
+    - mygearpump
+    - kafka-ups
+    - kerberos-service
+  env:
+    RULE_ENGINE_VERSION: ${version}
+    RULE_ENGINE_PACKAGE_NAME: gearpump-rule-engine-${version}-jar-with-dependencies.jar

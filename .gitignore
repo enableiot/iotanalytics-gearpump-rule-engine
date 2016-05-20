@@ -1,0 +1,14 @@
+*.class
+target/
+.classpath
+.project
+.settings
+.idea/
+*.iml
+*.log
+*.pyc
+deployer/vendor/*
+!deployer/vendor/.keep
+*.jar
+/manifest.yml
+?

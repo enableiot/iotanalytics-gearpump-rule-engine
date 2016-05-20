@@ -1,0 +1,1 @@
+execute: python src/app.py

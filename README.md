@@ -5,7 +5,7 @@ This is an implementation of Gearpump application, which allow you to run specif
 
 It is a part of IoT Analytics solution and previous deployment of iotanalytics-dashboard and iotanalytics-backend is required.
 
-In order to find out more about gearpump real-time big data streaming engine, please visit: http://www.gearpump.io
+In order to find out more about gearpump real-time big data streaming engine, please visit: http://gearpump.apache.org
 
 Currently it supports rules consisting of:
 

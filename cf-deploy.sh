@@ -15,5 +15,5 @@
 #
 
 mvn clean install &&
-pip install --download deployer/vendor -r deployer/requirements.txt &&
+pip download --exists-action w -d deployer/vendor -r deployer/requirements.txt &&
 cf push gearpump-deployer

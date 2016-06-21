@@ -21,6 +21,7 @@ connected using logical AND or OR operators.
 1. Apache Maven 2.2.1 or higher
 1. Python 2.7
 1. Cloud Foundry CLI and Trusted Analytics Platform account (https://github.com/trustedanalytics)
+1. pip => 8.1.1
 
 ## Deployment manual
 
